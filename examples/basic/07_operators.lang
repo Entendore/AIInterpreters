@@ -1,0 +1,47 @@
+// =============================================
+// Operators and Expressions
+// =============================================
+
+print("=== Operators Demo ===")
+
+// Arithmetic operators
+int a = 10 + 5
+int b = 20 - 8
+int c = 6 * 7
+int d = 100 / 4
+
+print("10 + 5 =", a)
+print("20 - 8 =", b)
+print("6 * 7 =", c)
+print("100 / 4 =", d)
+
+// Comparison operators
+bool eq = (10 == 10)
+bool neq = (5 != 3)
+bool lt = (3 < 5)
+bool gt = (7 > 2)
+
+print("10 == 10:", eq)
+print("5 != 3:", neq)
+print("3 < 5:", lt)
+print("7 > 2:", gt)
+
+// Logical operators
+bool andResult = true && false
+bool orResult = true || false
+bool notResult = !true
+
+print("true && false:", andResult)
+print("true || false:", orResult)
+print("!true:", notResult)
+
+// Unary operators
+int negated = -15
+bool inverted = !false
+
+print("-15:", negated)
+print("!false:", inverted)
+
+// Complex expressions with parentheses
+int complexResult = (10 + 5) * 2 - 3
+print("(10 + 5) * 2 - 3 =", complexResult)

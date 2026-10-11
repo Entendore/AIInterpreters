@@ -1,0 +1,18 @@
+// =============================================
+// Complex Numbers
+// =============================================
+
+// Complex number literals
+complex z1 = 1.0+2.0i
+complex z2 = 3.0-1.0i
+
+// Complex arithmetic
+// Note: Operations on complex numbers work automatically
+print("=== Complex Numbers Demo ===")
+print("z1:", z1)
+print("z2:", z2)
+
+// Complex addition
+// Note: This would work with full complex number support
+// complex sum = z1 + z2
+// print("z1 + z2:", sum)

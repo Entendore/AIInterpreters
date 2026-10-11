@@ -1,0 +1,34 @@
+// =============================================
+// Basic Variable Declarations and Types
+// =============================================
+
+// Integer declarations
+int count = 100
+int maxItems = 50
+int result = count + maxItems
+
+// Float declarations  
+float pi = 3.14159
+float e = 2.71828
+float sum = pi + e
+
+// String declarations
+string greeting = "Hello, World!"
+string name = "Alice"
+
+// Boolean declarations
+bool isActive = true
+bool isComplete = false
+
+// Type inference with var
+var inferredInt = 42
+var inferredFloat = 3.14
+var inferredString = "auto-typed"
+
+// Print all variables
+print("=== Basic Types Demo ===")
+print("Count:", count)
+print("Pi:", pi)
+print("Greeting:", greeting)
+print("Active:", isActive)
+print("Inferred:", inferredInt)

@@ -1,0 +1,33 @@
+// =============================================
+// Recursion with special keywords
+// =============================================
+
+// Using 'rec' keyword for recursive function
+var fib = rec(n) => int {
+    if (n <= 1) {
+        return n
+    }
+    return fib(n - 1) + fib(n - 2)
+}
+
+// Using 'recurse' keyword for another recursive function
+var sumTo = recurse(n) => int {
+    if (n == 0) {
+        return 0
+    }
+    return n + sumTo(n - 1)
+}
+
+// Using 'r' keyword (short form)
+var powerOfTwo = r(n) => int {
+    if (n == 0) {
+        return 1
+    }
+    return 2 * powerOfTwo(n - 1)
+}
+
+// Test recursion
+print("=== Recursion Demo ===")
+print("Fibonacci(10):", fib(10))
+print("Sum 1 to 10:", sumTo(10))
+print("2^8:", powerOfTwo(8))
