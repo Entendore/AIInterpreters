@@ -1,0 +1,41 @@
+// =============================================
+// Closures and Anonymous Functions
+// =============================================
+
+// Anonymous closure (lambda)
+var square = function(x) {
+    return x * x
+}
+
+// Closure with multiple parameters
+var multiply = function(a, b) {
+    return a * b
+}
+
+// Named closure (can be recursive)
+var factorial = function fact(n) {
+    if (n <= 1) {
+        return 1
+    }
+    return n * fact(n - 1)
+}
+
+// Closure capturing external variable
+int multiplier = 10
+var scale = function(x) {
+    return x * multiplier
+}
+
+// Higher-order function: function that takes a function
+function applyTwice(f, x) {
+    var result = f(x)
+    return f(result)
+}
+
+// Test closures
+print("=== Closures Demo ===")
+print("square(5):", square(5))
+print("multiply(4, 7):", multiply(4, 7))
+print("factorial(5):", factorial(5))
+print("scale(3):", scale(3))
+print("applyTwice(square, 2):", applyTwice(square, 2))

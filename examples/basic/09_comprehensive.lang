@@ -1,0 +1,78 @@
+// =============================================
+// Comprehensive Demo - Multiple Features
+// =============================================
+
+print("=== Comprehensive Language Demo ===")
+print("")
+
+// 1. Variables and Types
+print("--- Variables ---")
+int items = 100
+float price = 19.99
+string product = "Widget"
+bool inStock = true
+
+print("Product:", product)
+print("Price:", price)
+print("In Stock:", inStock)
+print("")
+
+// 2. Functions
+print("--- Functions ---")
+
+function calculateTotal(qty, unitPrice) {
+    return qty * unitPrice
+}
+
+function applyDiscount(total, discountPercent) {
+    return total * (1 - discountPercent / 100)
+}
+
+float subtotal = calculateTotal(items, price)
+float finalPrice = applyDiscount(subtotal, 10)
+
+print("Subtotal:", subtotal)
+print("After 10% discount:", finalPrice)
+print("")
+
+// 3. Closures
+print("--- Closures ---")
+
+var taxCalculator = function(rate) {
+    return function(amount) {
+        return amount * rate
+    }
+}
+
+var calcTax = taxCalculator(0.08)
+float tax = calcTax(finalPrice)
+
+print("Tax (8%):", tax)
+print("Total with tax:", finalPrice + tax)
+print("")
+
+// 4. Recursion
+print("--- Recursion ---")
+
+// Factorial using named closure (recursive)
+var factorial = function fact(n) {
+    if (n <= 1) {
+        return 1
+    }
+    return n * fact(n - 1)
+}
+
+print("5! =", factorial(5))
+print("10! =", factorial(10))
+print("")
+
+// 5. Mathematical Operations
+print("--- Built-in Functions ---")
+print("sqrt(16):", sqrt(16))
+print("abs(-42):", abs(-42))
+print("pow(2, 10):", pow(2, 10))
+print("min(3, 7, 1, 9):", min(3, 7, 1, 9))
+print("max(3, 7, 1, 9):", max(3, 7, 1, 9))
+print("")
+
+print("=== Demo Complete ===")
