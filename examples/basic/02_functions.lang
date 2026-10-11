@@ -1,0 +1,42 @@
+// =============================================
+// Functions and Return Values
+// =============================================
+
+// Simple function with no parameters
+function greet() {
+    return "Hello from function!"
+}
+
+// Function with parameters
+function add(a, b) {
+    return a + b
+}
+
+// Function with multiple statements
+function calculateArea(width, height) {
+    int area = width * height
+    return area
+}
+
+// Function with conditional logic
+function max(a, b) {
+    if (a > b) {
+        return a
+    }
+    return b
+}
+
+// Function calling another function
+function doubleAndAdd(x, y) {
+    int doubledX = x * 2
+    int doubledY = y * 2
+    return add(doubledX, doubledY)
+}
+
+// Test all functions
+print("=== Functions Demo ===")
+print(greet())
+print("5 + 3 =", add(5, 3))
+print("Area 10x5:", calculateArea(10, 5))
+print("Max of 15 and 8:", max(15, 8))
+print("doubleAndAdd(3, 4):", doubleAndAdd(3, 4))
