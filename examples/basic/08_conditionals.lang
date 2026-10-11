@@ -1,0 +1,45 @@
+// =============================================
+// Conditionals (If Statements)
+// =============================================
+
+print("=== Conditionals Demo ===")
+
+// Simple if statement
+int x = 15
+
+if (x > 10) {
+    print("x is greater than 10")
+}
+
+// If-else statement
+int score = 75
+
+if (score >= 90) {
+    print("Grade: A")
+}
+if (score >= 80) {
+    print("Grade: B")
+}
+if (score >= 70) {
+    print("Grade: C")
+}
+
+// Nested conditions
+int age = 25
+bool hasLicense = true
+
+if (age >= 18) {
+    print("Adult")
+    if (hasLicense) {
+        print("Can drive")
+    }
+}
+
+// Conditional with complex expression
+int a = 10
+int b = 20
+int c = 15
+
+if ((a < b) && (b > c)) {
+    print("Complex condition satisfied")
+}
